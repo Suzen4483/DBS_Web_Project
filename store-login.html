@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Store Login</title>
+	<style>
+		body {
+			background-image: url('images/bg1.jpg');
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.welcome-container {
+			background-color: rgba(255, 255, 255, 0.7);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			width: 300px;
+			max-width: 90%;
+			margin-bottom: 20px;
+			text-align: center;
+			font-size: 20px;
+		}
+
+		.login-container {
+			background-color: rgba(255, 255, 255, 0.7);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			width: 300px;
+			max-width: 90%;
+			text-align: center;
+		}
+
+		label {
+			font-weight: bold;
+			text-align: left;
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			margin: 10px 0;
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #007577;
+			color: white;
+			padding: 10px;
+			margin-top: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			width: 100%;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		.container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.container a {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container a:first-child {
+  margin-left: 0;
+}
+.container a:last-child {
+  margin-right: 0;
+}
+
+.container a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="welcome-container">
+		Welcome to Store's login page
+	</div>
+	<div class="login-container">
+		<h2>Store Login</h2>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="submit" value="Login">
+		</form>
+	</div>
+	<div class="container">
+		<a href="index.html">Home</a>
+		<a href="admin-login.html">Admin Login Page</a>
+		<a href="distributor-login.html">Distributor Login Page</a>
+	  </div>
+	  
+</body>
+</html>
